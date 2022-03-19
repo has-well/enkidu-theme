@@ -1,0 +1,14 @@
+{
+  "name": "enkidu",
+  "version": "1.0.0",
+  "description": "CTAS",
+  "main": "index.js",
+  "scripts": {
+    "tailwind": "tailwind build assets/tailwind/tailwind.css -o assets/css/tailwind.css",
+    "stylus": "stylus -w -c -m --include-css assets/stylus/style.styl -o style.css"
+  },
+  "devDependencies": {
+    "tailwindcss": "^2.2.19",
+    "stylus": "^0.57.0"
+  }
+}
