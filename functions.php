@@ -1,4 +1,5 @@
 <?php
+include(__DIR__ . '/inc/afc.php');
 // Remove junk from head
 remove_action('wp_head', 'rsd_link');
 remove_action('wp_head', 'wp_generator');
@@ -155,6 +156,15 @@ add_theme_support( 'social-links', array(
     'facebook', 'twitter', 'linkedin', 'google_plus', 'instagram',
 ) );
 
+add_action('after_switch_theme', 'setup_theme_options');
+
+function setup_theme_options () {
+    if(get_option('first_theme_activation') === false){
+        // Set a flag if the theme activation happened
+        add_option('first_theme_activation', true, '', false);
+        afc_en_init();
+    }
+}
 // add custom shortcode
 function make_button($atts)
 {
