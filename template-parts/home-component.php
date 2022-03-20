@@ -1,4 +1,4 @@
-ащ<section id="hero-section" class="w-screen px-10 md:p-4 lg:p-10">
+<section id="hero-section" class="w-screen px-10 md:p-4 lg:p-10">
     <div class="container flex flex-col justify-between h-full custom">
         <div class="flex justify-right flex-col items-end">
             <h1 class="text-3xl sm:text-4xl font-bold text-white max-w-text-head"><?php the_field('hero1'); ?></h1>

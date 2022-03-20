@@ -17,8 +17,10 @@ module.exports = {
 					marginLeft: 'auto',
 					marginRight: 'auto',
                     maxWidth: '100%',
+                    overflow: 'hidden',
           '@screen sm': {
             maxWidth: '640px',
+            overflow: 'inherit',
           },
           '@screen md': {
             maxWidth: '768px',
