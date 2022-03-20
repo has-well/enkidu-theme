@@ -51,7 +51,7 @@
                                 endforeach;
                             }
                             ?>
-                            <a href="https://fondy.ua" class="btn btn-blue text-sm"><?php _e( 'Register', 'enkidu-v2' ); ?></a>
+                            <a href="<?php the_field('register_link'); ?>" class="btn btn-blue text-sm"><?php _e( 'Register', 'enkidu-v2' ); ?></a>
                             <?php pll_the_languages(array('dropdown'=>1, 'display_names_as'=>'slug'));  ?>
                         </div>
                     </div>
