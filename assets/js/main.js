@@ -18,9 +18,10 @@ window.onload = function() {
 			header.classList.remove('is-scrolled');
 	}
 
-	//menuInteraction();
+	menuInteraction();
 	function menuInteraction() {
 		const burgerMenu = document.querySelector('.burger-menu');
+		const header = document.querySelector('header');
 		burgerMenu.addEventListener('click', () => {
 			header.classList.toggle('is-active');
 		});

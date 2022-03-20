@@ -14,6 +14,12 @@ remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0);
 // globals
 $GLOBALS['enkidu_global'] = array();
 
+function enkidu_text_domain() {
+    load_theme_textdomain( 'enkidu-v2', get_template_directory() . '/languages' );
+}
+add_action( 'after_setup_theme', 'enkidu_text_domain' );
+
+
 // disable editor on pages
 function disable_editor_pages()
 {
@@ -26,13 +32,15 @@ function disable_editor_pages()
     endforeach;
 }
 
-add_action('init', 'disable_editor_pages');
+# add_action('init', 'disable_editor_pages');
 
 // disable admin bar
 show_admin_bar(false);
 
 // add menu
 add_theme_support('menus');
+add_theme_support('widgets');
+add_theme_support('automatic-feed-links');
 
 // post thumbnail
 add_theme_support('post-thumbnails');
@@ -129,19 +137,6 @@ function clog($data)
     echo '</pre>';
 }
 
-// update admin style
-add_action('admin_head', 'my_custom_css');
-
-function my_custom_css()
-{
-    /* #menu-posts, */
-    echo '<style>
-			#menu-comments {
-				display: none
-			}
-		</style>';
-}
-
 // limit excerpt length
 function custom_excerpt_length($length)
 {
@@ -156,6 +151,9 @@ function wpdocs_excerpt_more($more)
 
 add_filter('excerpt_more', 'wpdocs_excerpt_more');
 
+add_theme_support( 'social-links', array(
+    'facebook', 'twitter', 'linkedin', 'google_plus', 'instagram',
+) );
 
 // add custom shortcode
 function make_button($atts)

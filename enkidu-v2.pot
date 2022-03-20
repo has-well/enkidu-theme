@@ -1,0 +1,77 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Enkidu Theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-20 07:27+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.1; wp-5.9.2\n"
+"X-Domain: enkidu-v2"
+
+#. Name of the theme
+msgid "Enkidu Theme"
+msgstr ""
+
+#: footer.php:41
+msgid "Follow Us"
+msgstr ""
+
+#: template-parts/home-component.php:50
+msgid "Get Connected"
+msgstr ""
+
+#: template-parts/home-component.php:60 template-parts/home-component.php:72
+msgid "Go here"
+msgstr ""
+
+#: template-parts/home-component.php:23
+msgid "Learn more"
+msgstr ""
+
+#: template-parts/home-component.php:42
+msgid "More about SAP Ariba"
+msgstr ""
+
+#: template-parts/home-component.php:29
+msgid "Our Solution"
+msgstr ""
+
+#: footer.php:17
+msgid "Partners"
+msgstr ""
+
+#: header.php:50
+msgid "Register"
+msgstr ""
+
+#: template-parts/home-component.php:83
+msgid "Services"
+msgstr ""
+
+#: footer.php:29
+msgid "Sitemap"
+msgstr ""
+
+#: footer.php:5
+msgid "Solution & Networks"
+msgstr ""
+
+#: template-parts/home-component.php:55
+msgid "You Are in Need"
+msgstr ""
+
+#: template-parts/home-component.php:67
+msgid "You Can Supply"
+msgstr ""
+
+#. Author of the theme
+msgid "Аноним"
+msgstr ""

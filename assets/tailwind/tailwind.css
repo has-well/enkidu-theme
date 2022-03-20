@@ -18,8 +18,8 @@
     padding: 10px 20px;
 }
 .btn-yellow:hover {
-    @apply bg-yellow-400 text-black;
+    @apply bg-yellow-400 text-black transition-all duration-500;
 }
 .btn-blue:hover {
-    @apply bg-blue-700;
+    @apply bg-main_yellow transition-all duration-500;
 }
