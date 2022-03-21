@@ -1,7 +1,13 @@
+img, video
+	border: 0 !important;
+	border-style: none !important;
+	outline: none !important;
 .absolute-r
 	position absolute
 	right 30px
 .is-active
+	.overflow-vs
+		overflow visible
 	.animate-pulse
 		animation unset
 	#main_nav
@@ -20,16 +26,28 @@
 			-o-transition: 0.4s;
 			transition: 0.4s;
 #lang_choice_1
-	background: white
-	border: 1px solid $main_button_alt
+	background: #fff
+	border: 1px solid #0854a0
 	box-sizing: border-box
 	border-radius: 4px
 	text-transform: uppercase
-	padding: 8px
+	-webkit-appearance: none
 	font-size: 12px
-	padding-top: 0.5rem
-	padding-bottom: 0.5rem
 	font-weight: 800
-	color: $main_button_alt
-	outline none
+	color: #0854a0
+	outline: none
 	margin-left: 1.25rem
+	height: 36px
+	line-height: 34px
+	text-align center
+	padding-left 10px
+	padding-right 10px
+	transition: color 0.5s, transform 0.2s, background-color 0.2s
+	overflow: hidden
+	box-shadow: none
+	&:active
+		transform: translateY(3px)
+	&:hover
+		cursor pointer
+		color: $main_yellow
+		background $main

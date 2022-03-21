@@ -13,9 +13,9 @@
 </head>
 <body class="w-full">
 <header class="sticky top-0 py-2 bg-white">
-    <div class="container">
+    <div class="container overflow-vs">
         <nav class="relative z-50 h-24 select-none">
-            <div class="container relative flex flex-wrap items-center justify-between h-24 mx-auto font-medium md:overflow-visible px-4 sm:px-4 md:px-2">
+            <div class="container overflow-vs relative flex flex-wrap items-center justify-between h-24 mx-auto font-medium md:overflow-visible px-4 sm:px-4 md:px-2">
                 <div class="flex items-center justify-start h-full pr-4">
                     <a href="<?php echo home_url() ?>" class="inline-block py-4 md:py-0">
                         <img class="h-5 sm:h-7" src="<?php echo $baseURL ?>/assets/img/logo.svg"
@@ -35,7 +35,7 @@
                                             $active = 'text-main_yellow';
                                         }
                                         $url = esc_url($item->url);
-                                        echo '<a class="transition-all duration-500 inline-block text-lg md:text-sm text-center w-full py-2 mx-0 font-bold text-left text-blue-dark md:w-auto md:px-0 md:mx-2 hover:text-main_yellow lg:mx-3 '. $active .'" href="' . $url . '">' . $item->title . '</a>';
+                                        echo '<a class="inline-block text-lg md:text-sm text-center w-full py-2 mx-0 font-bold text-left text-blue-dark md:w-auto md:px-0 md:mx-2 hover:text-main_yellow lg:mx-3 '. $active .'" href="' . $url . '">' . $item->title . '</a>';
                                     endforeach;
                                 }
                             ?>
@@ -47,7 +47,7 @@
                             if ($menu) {
                                 foreach ($menu as $item) :
                                     $url = esc_url($item->url);
-                                    echo '<a class="transition-all duration-500 w-full text-sm px-6 py-2 mr-0 font-bold text-blue-dark md:px-0 lg:pl-2 md:mr-4 lg:mr-5 md:w-auto" href="' . $url . '">' . $item->title . '</a>';
+                                    echo '<a class="w-full text-sm px-6 py-2 mr-0 font-bold text-blue-dark md:px-0 lg:pl-2 md:mr-4 lg:mr-5 md:w-auto" href="' . $url . '">' . $item->title . '</a>';
                                 endforeach;
                             }
                             ?>
@@ -57,10 +57,10 @@
                     </div>
                 </div>
                 <div class="absolute-r flex flex-col items-center items-end justify-center w-8 h-8 bg-white rounded-full cursor-pointer md:hidden hover:bg-gray-100 burger-menu">
-                    <div class="p-4 space-y-2 bg-blue-dark rounded shadow">
-                        <span class="block w-8 h-1 bg-main_yellow animate-pulse"></span>
-                        <span class="block w-8 h-1 bg-main_yellow animate-pulse"></span>
-                        <span class="block w-8 h-1 bg-main_yellow animate-pulse"></span>
+                    <div class="p-3 space-y-2 bg-blue-dark rounded shadow">
+                        <span class="block w-6 h-0.5 bg-main_yellow animate-pulse"></span>
+                        <span class="block w-6 h-0.5 bg-main_yellow animate-pulse"></span>
+                        <span class="block w-6 h-0.5 bg-main_yellow animate-pulse"></span>
                     </div>
                 </div>
             </div>

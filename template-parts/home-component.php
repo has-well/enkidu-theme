@@ -8,8 +8,8 @@
         </div>
     </div>
 </section>
-<section id="hero-section-2" class="w-screen px-6 md:px-10 p-4 lg:p-10 pb-4 sm:pb-8 bg-blue">
-    <div class="container flex-col sm:flex-row flex justify-between md:w-full lg:w-11/12">
+<section id="hero-section-2" class="w-screen px-6 md:px-10 p-4 lg:p-10 pb-4 pb-10 sm:pb-8 bg-blue">
+    <div class="container pt-10 md:pt-0 flex-col sm:flex-row flex justify-between md:w-full lg:w-11/12">
         <div class="flex justify-right flex-col items-start w-full md:w-1/2 sm-bordered">
             <h2 class="text-3xl sm:text-4xl	text-white max-w-text-head-2 font-bold"><?php the_field('hero3'); ?></h2>
             <p class="text-white md:w-full lg:w-90 pt-8 text-lg font-bold"><?php the_field('hero3-1'); ?></p>
@@ -23,7 +23,7 @@
         <a href="<?php the_field('learn_more_link'); ?>" class="btn btn-yellow text-lg font-bold"><?php _e('Learn more', 'enkidu-v2'); ?></a>
     </div>
 </section>
-<section id="solution">
+<section id="solution" class="pt-6 md:pt-0 pb-10 sm:pb-0">
     <div class="container flex justify-center flex-col p-4 md:p-10">
         <div class="container text-center">
             <h2 class="text-blue-dark text-3xl sm:text-4xl font-bold"><?php _e('Our Solution', 'enkidu-v2'); ?></h2>
@@ -44,16 +44,17 @@
         </div>
     </div>
 </section>
-<section id="connected" class="bg-blue">
+<section id="connected" class="bg-blue pt-10 md:pt-0">
     <div class="container flex justify-center flex-col p-4 md:p-10 pb-6 pt-4 md:pb-16 md:pt-14">
         <div class="container text-center w-full">
             <h2 class="text-white text-3xl sm:text-4xl font-bold"><?php _e('Get Connected', 'enkidu-v2'); ?></h2>
-            <div class="flex flex-wrap md:flex-col lg:flex-row pt-6 md:pt-16 justify-around md:items-center">
+            <div class="flex flex-wrap md:flex-col lg:flex-row pt-6 pt:8 md:pt-8 lg:pt-16 justify-around md:items-center">
+
                 <div class="p-4 md:w-full lg:w-1/2 flex-col circled">
-                    <div class="flex rounded-lg h-full lg:p-8 lg:pt-14 flex-col">
-                        <div class="flex flex-col items-center mb-3 h-64 justify-between mt-10">
+                    <div class="flex rounded-lg h-full p-4 pt-2 xl:p-8 xl:pt-14 flex-col justify-center">
+                        <div class="flex flex-col items-center mb-3 h-64 justify-between mt-10 h-full">
                             <h3 class="text-white md:text-xl lg:text-4xl"><?php _e('You Are in Need', 'enkidu-v2'); ?></h3>
-                            <p class="text-white w-56 md:text-md lg:text-lg md:mb-6 lg:mb-16 mt-6 leading-5">
+                            <p class="text-white w-56 md:text-md lg:text-lg mb-4 mt-6 leading-5">
                                 <?php the_field('connected1'); ?>
                             </p>
                             <a href="<?php the_field('go_here_need_link'); ?>"
@@ -61,11 +62,12 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="p-4 mt-4 sm:mt-0 md:w-full lg:w-1/2 flex-col circled">
-                    <div class="flex rounded-lg h-full lg:p-8 lg:pt-14 flex-col">
-                        <div class="flex flex-col items-center mb-3 h-64 justify-between mt-10">
+                    <div class="flex rounded-lg h-full p-4 pt-2 xl:p-8 xl:pt-14 flex-col justify-center">
+                        <div class="flex flex-col items-center mb-3 h-64 justify-between mt-10 h-full">
                             <h3 class="text-white md:text-xl lg:text-4xl"><?php _e('You Can Supply', 'enkidu-v2'); ?></h3>
-                            <p class="text-white w-56 md:text-md lg:text-lg md:mb-6 lg:mb-16 mt-6 leading-5">
+                            <p class="text-white w-56 md:text-md lg:text-lg mt-6 mb-4 leading-5">
                                 <?php the_field('connected2'); ?>
                             </p>
                             <a href="<?php the_field('go_here_supply_link'); ?>"
@@ -77,7 +79,7 @@
         </div>
     </div>
 </section>
-<section class="body-font border-t">
+<section class="body-font border-t pt-10 md:pt-0">
     <div class="container px-2 sm:px-5 py-6 sm:py-12 mx-auto">
         <div class="flex flex-col text-center w-full mb-4">
             <h1 class="text-blue-dark text-3xl sm:text-4xl font-bold"><?php _e('Services', 'enkidu-v2'); ?></h1>

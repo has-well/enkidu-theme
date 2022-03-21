@@ -21,6 +21,7 @@ window.onload = function() {
 	menuInteraction();
 	function menuInteraction() {
 		const burgerMenu = document.querySelector('.burger-menu');
+		// const ho = document.querySelector('.overflow-vs');
 		const header = document.querySelector('header');
 		burgerMenu.addEventListener('click', () => {
 			header.classList.toggle('is-active');
@@ -34,7 +35,7 @@ window.onload = function() {
 
 	/** resize **/
 	window.addEventListener('resize', function() {
-		init();
+		// init();
 	});
 
 };
