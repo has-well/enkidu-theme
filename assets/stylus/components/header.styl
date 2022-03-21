@@ -45,6 +45,9 @@ img, video
 	transition: color 0.5s, transform 0.2s, background-color 0.2s
 	overflow: hidden
 	box-shadow: none
+	width 60px
+	@media (max-width $md)
+		width 44px
 	&:active
 		transform: translateY(3px)
 	&:hover

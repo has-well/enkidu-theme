@@ -14,8 +14,8 @@
 <body class="w-full">
 <header class="sticky top-0 py-2 bg-white">
     <div class="container overflow-vs">
-        <nav class="relative z-50 h-24 select-none">
-            <div class="container overflow-vs relative flex flex-wrap items-center justify-between h-24 mx-auto font-medium md:overflow-visible px-4 sm:px-4 md:px-2">
+        <nav class="relative z-50 h-14 md:h-24 select-none">
+            <div class="container overflow-vs relative flex flex-wrap items-center justify-between h-14 md:h-24 mx-auto font-medium md:overflow-visible px-4 sm:px-4 md:px-2">
                 <div class="flex items-center justify-start h-full pr-4">
                     <a href="<?php echo home_url() ?>" class="inline-block py-4 md:py-0">
                         <img class="h-5 sm:h-7" src="<?php echo $baseURL ?>/assets/img/logo.svg"
@@ -56,8 +56,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="absolute-r flex flex-col items-center items-end justify-center w-8 h-8 bg-white rounded-full cursor-pointer md:hidden hover:bg-gray-100 burger-menu">
-                    <div class="p-3 space-y-2 bg-blue-dark rounded shadow">
+                <div class="absolute-r flex flex-col items-center items-end justify-center w-6 h-6 bg-white rounded-full cursor-pointer md:hidden hover:bg-gray-100 burger-menu">
+                    <div class="p-2 space-y-1 bg-blue-dark rounded shadow">
                         <span class="block w-6 h-0.5 bg-main_yellow animate-pulse"></span>
                         <span class="block w-6 h-0.5 bg-main_yellow animate-pulse"></span>
                         <span class="block w-6 h-0.5 bg-main_yellow animate-pulse"></span>

@@ -23,11 +23,11 @@
         <a href="<?php the_field('learn_more_link'); ?>" class="btn btn-yellow text-lg font-bold"><?php _e('Learn more', 'enkidu-v2'); ?></a>
     </div>
 </section>
-<section id="solution" class="pt-6 md:pt-0 pb-10 sm:pb-0">
+<section id="solution" class="pt-6 md:pt-0 pb-10 sm:pb-0 overflow-hidden">
     <div class="container flex justify-center flex-col p-4 md:p-10">
         <div class="container text-center">
             <h2 class="text-blue-dark text-3xl sm:text-4xl font-bold"><?php _e('Our Solution', 'enkidu-v2'); ?></h2>
-            <div class="container my-10">
+            <div class="container my-10 custom-over">
                 <?php if (get_field('solution_image')): ?>
                     <?php $image = get_field('solution_image'); ?>
                     <img class="solution-image" src="<?php echo $image['url']; ?>"
