@@ -108,7 +108,7 @@
                         <img class="solution-image" src="<?php bloginfo('template_url'); ?>/assets/img/icon-support.png">
                     </div>
                     <div class="flex items-start mb-3 flex-col pt-4 sm:pt-8">
-                        <h2 class="text-xl sm:text-2xl title-font font-medium pb-6 font-bold">Buyer account</h2>
+                        <h2 class="text-xl sm:text-2xl title-font font-medium pb-6 font-bold"><?php _e('Buyer account', 'enkidu-v2'); ?></h2>
                         <div class="flex-grow">
                             <p class="leading-relaxed text-sm text-main_text">
                                 <?php the_field('buyeracc'); ?>
@@ -123,7 +123,7 @@
                         <img class="solution-image" src="<?php bloginfo('template_url'); ?>/assets/img/icon-hosting.png">
                     </div>
                     <div class="flex items-start mb-3 flex-col pt-4 sm:pt-8">
-                        <h2 class="text-xl sm:text-2xl title-font font-medium pb-6 font-bold">Procurement</h2>
+                        <h2 class="text-xl sm:text-2xl title-font font-medium pb-6 font-bold"><?php _e('Procurement', 'enkidu-v2'); ?></h2>
                         <div class="flex-grow">
                             <p class="leading-relaxed text-sm text-main_text">
                                 <?php the_field('procurement'); ?>
@@ -140,7 +140,7 @@
                         <img class="solution-image" src="<?php bloginfo('template_url'); ?>/assets/img/icon-support.png">
                     </div>
                     <div class="flex items-start mb-3 flex-col pt-4 sm:pt-8">
-                        <h2 class="text-xl sm:text-2xl title-font font-medium pb-6 font-bold">Suppliers management</h2>
+                        <h2 class="text-xl sm:text-2xl title-font font-medium pb-6 font-bold"><?php _e('Suppliers management', 'enkidu-v2'); ?></h2>
                         <div class="flex-grow">
                             <p class="leading-relaxed text-sm text-main_text">
                                 <?php the_field('suppliers_management'); ?>
@@ -155,7 +155,7 @@
                         <img class="solution-image" src="<?php bloginfo('template_url'); ?>/assets/img/icon-experiences.png">
                     </div>
                     <div class="flex items-start mb-3 flex-col pt-4 sm:pt-8">
-                        <h2 class="text-xl sm:text-2xl title-font font-medium pb-6 font-bold">Invoices workflow</h2>
+                        <h2 class="text-xl sm:text-2xl title-font font-medium pb-6 font-bold"><?php _e('Invoices workflow', 'enkidu-v2'); ?></h2>
                         <div class="flex-grow">
                             <p class="leading-relaxed text-sm text-main_text">
                                 <?php the_field('invoices'); ?>
