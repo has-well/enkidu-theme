@@ -31,7 +31,7 @@
                 $menu = wp_get_nav_menu_items('footer_right', array());
                 if ($menu) {
                     foreach ($menu as $item) :
-                        $pg = get_page_by_title($item->title);
+                        $pg = get_post($item->object_id);
                         $active = '';
                         if ($post and $pg and $post->ID === $pg->ID){
                             $active = 'bg-main_yellow';

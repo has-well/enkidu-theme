@@ -17,6 +17,11 @@
     @apply bg-main_yellow text-main_button;
     padding: 10px 20px;
 }
+@media (max-width: 560px) {
+    .btn-yellow {
+        padding: 2px 4px;
+    }
+}
 .btn-yellow:hover {
     @apply bg-yellow-400 text-black transition-all duration-500;
 }

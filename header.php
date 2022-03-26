@@ -29,9 +29,9 @@
                                 $menu = wp_get_nav_menu_items('head_left', array());
                                 if ($menu) {
                                     foreach ($menu as $item) :
-                                        $pg = get_page_by_title($item->title);
+                                        $pg = get_post($item->object_id);
                                         $active = '';
-                                        if ($post and $post->ID === $pg->ID){
+                                        if ($post and $pg and $post->ID === $pg->ID){
                                             $active = 'text-main_yellow';
                                         }
                                         $url = esc_url($item->url);
