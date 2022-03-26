@@ -167,3 +167,23 @@
         </div>
     </div>
 </section>
+
+<section class="body-font border-t pt-10 md:pt-0">
+    <div class="container px-2 sm:px-5 py-6 sm:py-12 mx-auto">
+        <div class="flex flex-col text-center w-full mb-4">
+            <h1 class="text-blue-dark text-3xl sm:text-4xl font-bold"><?php _e('Partners', 'enkidu-v2'); ?></h1>
+        </div>
+        <div class="flex mb-3 flex-col pt-4 sm:pt-8">
+            <div class="flex space-evently pt-8 justify-evenly items-center">
+                <img alt="partner1" src="<?php the_field('partners_image1'); ?>">
+                <img alt="partner2" src="<?php the_field('partners_image2'); ?>">
+                <img alt="partner3" src="<?php the_field('partners_image3'); ?>">
+                <img alt="partner4" src="<?php the_field('partners_image4'); ?>">
+            </div>
+        </div>
+        <div class="container flex justify-center mt-20">
+            <a href="<?php the_field('become_partner_link'); ?>"
+               class="btn px btn-yellow text-lg font-bold"><?php _e('Become a partner', 'enkidu-v2'); ?></a>
+        </div>
+    </div>
+</section>
