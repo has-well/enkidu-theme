@@ -8,19 +8,19 @@
                 if ($menu) {
                     foreach ($menu as $item) :
                         $url = esc_url($item->url);
-                        echo '<a class="transition-all duration-300 inline-block py-0 px-2 text-white hover:bg-main_yellow no-underline text-lg" href="' . $url . '">' . $item->title . '</a>';
+                        echo '<a class="transition-all duration-300 inline-block py-0 px-2 text-white hover:bg-main_yellow no-underline text-lg font-light" href="' . $url . '">' . $item->title . '</a>';
                     endforeach;
                 }
                 ?>
             </ul>
             <ul class="text-white list-none p-0 font-thin flex flex-col text-left w-full">
-                <li class="inline-block py-2 px-2 sm:px-3 text-white font-extrabold tracking-wide text-lg"><?php _e( 'Partners', 'enkidu-v2' ); ?></li>
+                <li class="inline-block py-2 px-2 sm:px-3 text-white font-extrabold tracking-wide text-lg "><?php _e( 'Partners', 'enkidu-v2' ); ?></li>
                 <?php
                 $menu = wp_get_nav_menu_items('footer_center', array());
                 if ($menu) {
                     foreach ($menu as $item) :
                         $url = esc_url($item->url);
-                        echo '<a class="transition-all duration-300 inline-block py-0 px-2 sm:px-3 text-white hover:bg-main_yellow no-underline text-lg" href="' . $url . '">' . $item->title . '</a>';
+                        echo '<a class="transition-all duration-300 inline-block py-0 px-2 sm:px-3 text-white hover:bg-main_yellow no-underline text-lg font-light" href="' . $url . '">' . $item->title . '</a>';
                     endforeach;
                 }
                 ?>
@@ -37,7 +37,7 @@
                             $active = 'bg-main_yellow';
                         }
                         $url = esc_url($item->url);
-                        echo '<a class="transition-all duration-300 inline-block py-0 px-2 sm:px-3 text-white hover:bg-main_yellow no-underline text-lg '.$active.'" href="' . $url . '">' . $item->title . '</a>';
+                        echo '<a class="transition-all duration-300 inline-block py-0 px-2 sm:px-3 text-white hover:bg-main_yellow no-underline text-lg font-light '.$active.'" href="' . $url . '">' . $item->title . '</a>';
                     endforeach;
                 }
                 ?>

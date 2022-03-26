@@ -56,7 +56,7 @@
                     <div class="flex rounded-lg h-full p-4 pt-2 xl:p-8 xl:pt-8 flex-col justify-center">
                         <div class="flex flex-col items-center mb-3 h-64 justify-between mt-6 h-full">
                             <h3 class="text-white md:text-xl lg:text-4xl"><?php _e('You Are in Need', 'enkidu-v2'); ?></h3>
-                            <p class="text-white w-72 md:text-md lg:text-md mb-4 mt-6 leading-5">
+                            <p class="text-white w-54 md:w-72 md:text-md lg:text-md mb-4 mt-6 leading-5">
                                 <?php the_field('connected1'); ?>
                             </p>
                             <a href="<?php the_field('go_here_need_link'); ?>"
@@ -69,7 +69,7 @@
                     <div class="flex rounded-lg h-full p-4 pt-2 xl:p-8 xl:pt-8 flex-col justify-center">
                         <div class="flex flex-col items-center mb-3 h-64 justify-between mt-6 h-full">
                             <h3 class="text-white md:text-xl lg:text-4xl"><?php _e('You Can Supply', 'enkidu-v2'); ?></h3>
-                            <p class="text-white w-72 md:text-md lg:text-md mt-6 mb-4 leading-5">
+                            <p class="text-white w-54 md:w-72 md:text-md lg:text-md mt-6 mb-4 leading-5">
                                 <?php the_field('connected2'); ?>
                             </p>
                             <a href="<?php the_field('go_here_supply_link'); ?>"
@@ -82,7 +82,7 @@
                     <div class="flex rounded-lg h-full p-4 pt-2 xl:p-8 xl:pt-8 flex-col justify-center">
                         <div class="flex flex-col items-center mb-3 h-64 justify-between mt-6 h-full">
                             <h3 class="text-white md:text-xl lg:text-4xl"><?php _e('You Can Carrier', 'enkidu-v2'); ?></h3>
-                            <p class="text-white w-72 md:text-md lg:text-md mt-6 mb-4 leading-5">
+                            <p class="text-white w-54 md:w-72 md:text-md lg:text-md mt-6 mb-4 leading-5">
                                 <?php the_field('connected3'); ?>
                             </p>
                             <a href="<?php the_field('go_here_carriers_link'); ?>"
