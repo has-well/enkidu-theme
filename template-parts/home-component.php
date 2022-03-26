@@ -12,11 +12,11 @@
     <div class="container pt-10 md:pt-0 flex-col sm:flex-row flex justify-between md:w-full lg:w-11/12">
         <div class="flex justify-right flex-col items-start w-full md:w-1/2 sm-bordered">
             <h2 class="text-3xl sm:text-4xl	text-white max-w-text-head-2 font-bold"><?php the_field('hero3'); ?></h2>
-            <p class="text-white md:w-full lg:w-90 pt-8 text-lg font-bold"><?php the_field('hero3-1'); ?></p>
+            <p class="text-white md:w-full lg:w-4/5 pt-8 text-lg font-bold"><?php the_field('hero3-1'); ?></p>
         </div>
         <div class="flex justify-right flex-col items-start w-full md:w-1/2 lg:pl-0 md:pl-3 mt-10 sm:mt-0">
             <h2 class="text-3xl sm:text-4xl	text-white max-w-text-head-2 font-bold"><?php the_field('hero4'); ?></h2>
-            <p class="text-white md:w-full lg:w-90 pt-8 text-lg font-bold"><?php the_field('hero4-1'); ?></p>
+            <p class="text-white md:w-full pl-2 lg:w-4/5 pt-8 text-lg font-bold"><?php the_field('hero4-1'); ?></p>
         </div>
     </div>
     <div class="container flex justify-center mt-8 lg:mt-32 lg:mb-8">
@@ -56,7 +56,7 @@
                     <div class="flex rounded-lg h-full p-4 pt-2 xl:p-8 xl:pt-8 flex-col justify-center">
                         <div class="flex flex-col items-center mb-3 h-64 justify-between mt-6 h-full">
                             <h3 class="text-white md:text-xl lg:text-4xl"><?php _e('You Are in Need', 'enkidu-v2'); ?></h3>
-                            <p class="text-white w-72 md:text-md lg:text-lg mb-4 mt-6 leading-5">
+                            <p class="text-white w-72 md:text-md lg:text-md mb-4 mt-6 leading-5">
                                 <?php the_field('connected1'); ?>
                             </p>
                             <a href="<?php the_field('go_here_need_link'); ?>"
@@ -69,7 +69,7 @@
                     <div class="flex rounded-lg h-full p-4 pt-2 xl:p-8 xl:pt-8 flex-col justify-center">
                         <div class="flex flex-col items-center mb-3 h-64 justify-between mt-6 h-full">
                             <h3 class="text-white md:text-xl lg:text-4xl"><?php _e('You Can Supply', 'enkidu-v2'); ?></h3>
-                            <p class="text-white w-72 md:text-md lg:text-lg mt-6 mb-4 leading-5">
+                            <p class="text-white w-72 md:text-md lg:text-md mt-6 mb-4 leading-5">
                                 <?php the_field('connected2'); ?>
                             </p>
                             <a href="<?php the_field('go_here_supply_link'); ?>"
@@ -82,7 +82,7 @@
                     <div class="flex rounded-lg h-full p-4 pt-2 xl:p-8 xl:pt-8 flex-col justify-center">
                         <div class="flex flex-col items-center mb-3 h-64 justify-between mt-6 h-full">
                             <h3 class="text-white md:text-xl lg:text-4xl"><?php _e('You Can Carrier', 'enkidu-v2'); ?></h3>
-                            <p class="text-white w-72 md:text-md lg:text-lg mt-6 mb-4 leading-5">
+                            <p class="text-white w-72 md:text-md lg:text-md mt-6 mb-4 leading-5">
                                 <?php the_field('connected3'); ?>
                             </p>
                             <a href="<?php the_field('go_here_carriers_link'); ?>"

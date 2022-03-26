@@ -184,3 +184,13 @@ function make_button($atts)
 }
 
 add_shortcode('sbutton', 'make_button');
+
+function my_google_fonts() {
+    wp_enqueue_style(
+        'my-google-fonts',
+        'https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;700&display=swap',
+        false
+    );
+
+}
+add_action( 'wp_enqueue_scripts', 'my_google_fonts' );

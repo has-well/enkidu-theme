@@ -58,11 +58,11 @@ module.exports = {
                 },
             },
             maxWidth: {
-                'text-head': '450px',
+                'text-head': '550px',
                 'text-head-2': '550px'
             },
             fontFamily: {
-                'sans': ['Roboto', 'Helvetica', 'Arial', 'sans-serif']
+                'sans': ['Montserrat', 'sans-serif']
             }
 		}
 	}
