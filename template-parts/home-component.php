@@ -27,9 +27,9 @@
 
 <?php get_template_part('template-parts/sections/section', 'project-for') ?>
 
-<?php get_template_part('template-parts/sections/section', 'connected') ?>
-
 <?php get_template_part('template-parts/sections/section', 'solution') ?>
+
+<?php get_template_part('template-parts/sections/section', 'connected') ?>
 
 <?php get_template_part('template-parts/sections/section', 'partners') ?>
 
