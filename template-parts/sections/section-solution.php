@@ -65,7 +65,7 @@
             <div class="text-center max-w-sm">
                 <p class="mb-8 leading-relaxed text-main_text">With SAP Ariba solutions for buying and invoicing with guided buying capabilities, government employees and suppliers will be able to easily follow the organization’s procurement policies.</p>
                 <div class="flex justify-center">
-                    <a class="btn text-xs btn-blue inline-flex text-white font-bold border border-transparent hover:border-blue" href="#">More about SAP Ariba</a>
+                    <a class="btn text-xs btn-blue inline-flex text-white font-bold border border-transparent hover:border-blue" href="https://www.ariba.com/">More about SAP Ariba</a>
                 </div>
             </div>
         </div>
