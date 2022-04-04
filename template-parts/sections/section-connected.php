@@ -1,50 +1,46 @@
 <section id="connected" class="bg-blue pt-10 md:pt-0">
-    <div class="container flex justify-center flex-col p-4 md:p-10 pb-6 pt-4 md:pb-16 md:pt-14">
-        <div class="container text-center w-full">
-            <h2 class="text-white text-3xl sm:text-4xl font-bold"><?php _e('Get Connected', 'enkidu-v2'); ?></h2>
-            <div class="flex flex-wrap md:flex-col lg:flex-row pt-6 pt:8 md:pt-8 lg:pt-16 justify-around md:items-center">
+    <div class="container px-5 py-20 mx-auto">
+        <div class="flex flex-wrap w-full mb-16 flex-col items-center text-center">
+            <h2 class="sm:text-4xl text-3xl font-bold title-font mb-2 text-white"><?php _e('Get Connected', 'enkidu-v2'); ?></h2>
+        </div>
 
-                <div class="p-4 md:w-full lg:w-1/3 flex-col circled">
-                    <div class="flex rounded-lg h-full p-4 pt-2 xl:p-8 xl:pt-8 flex-col justify-center">
-                        <div class="flex flex-col items-center mb-3 h-64 justify-between mt-6 h-full">
-                            <h3 class="text-white md:text-xl lg:text-4xl"><?php _e('You Are in Need', 'enkidu-v2'); ?></h3>
-                            <p class="text-white w-54 md:w-72 md:text-md lg:text-md mb-4 mt-6 leading-5">
-                                <?php the_field('connected1'); ?>
-                            </p>
-                            <a href="<?php the_field('go_here_need_link'); ?>"
-                               class="btn px btn-yellow text-lg font-bold"><?php _e('Go here', 'enkidu-v2'); ?></a>
-                        </div>
-                    </div>
+        <div class="flex flex-wrap -m-4">
+            <div class="xl:w-1/3 md:w-1/2 px-7 mb-4">
+                <div class="flex flex-col justify-evenly items-center text-center h-80 lg:h-96 rounded-full"
+                     style="background-image: linear-gradient(rgba(0, 91, 187, 0.7),rgba(0, 91, 187, 0.7)),url('<?php bloginfo('template_url'); ?>/assets/img/connected/medicine.jpg'); background-size: cover; background-repeat: no-repeat">
+                    <h2 class="md:text-xl lg:text-4xl text-white font-bold title-font mb-2"><?php _e('Suppliers', 'enkidu-v2'); ?></h2>
+                    <p class="text-white md:text-md lg:text-lg px-16 leading-5">
+                        Can supply medicine? Tap into the SAP Business Network to be discoverable and engage with Medical Procurement of Ukraine
+                    </p>
+                    <a href="<?php the_field('go_here_need_link'); ?>"
+                       class="btn px-6 btn-yellow w-fit"><?php _e('Contact us', 'enkidu-v2'); ?></a>
                 </div>
+            </div>
 
-                <div class="p-4 mt-4 sm:mt-0 md:w-full lg:w-1/3 flex-col circled">
-                    <div class="flex rounded-lg h-full p-4 pt-2 xl:p-8 xl:pt-8 flex-col justify-center">
-                        <div class="flex flex-col items-center mb-3 h-64 justify-between mt-6 h-full">
-                            <h3 class="text-white md:text-xl lg:text-4xl"><?php _e('You Can Supply', 'enkidu-v2'); ?></h3>
-                            <p class="text-white w-54 md:w-72 md:text-md lg:text-md mt-6 mb-4 leading-5">
-                                <?php the_field('connected2'); ?>
-                            </p>
-                            <a href="<?php the_field('go_here_supply_link'); ?>"
-                               class="btn px btn-yellow text-lg font-bold"><?php _e('Go here', 'enkidu-v2'); ?></a>
-                        </div>
-                    </div>
+            <div class="xl:w-1/3 md:w-1/2 px-7 mb-4">
+                <div class="flex flex-col justify-evenly items-center text-center h-80 lg:h-96 rounded-full"
+                     style="background-image: linear-gradient(rgba(0, 91, 187, 0.7),rgba(0, 91, 187, 0.7)),url('<?php bloginfo('template_url'); ?>/assets/img/connected/donors.jpg'); background-size: cover; background-repeat: no-repeat">
+                    <h2 class="md:text-xl lg:text-4xl text-white font-bold title-font mb-2"><?php _e('Donors', 'enkidu-v2'); ?></h2>
+                    <p class="text-white md:text-md lg:text-lg px-16 leading-5">
+                        Want to pay for medical goods directly or donate to Medical Procurement of Ukraine. We will match you donation with needs and coordinate the invoicing
+                    </p>
+                    <a href="<?php the_field('go_here_need_link'); ?>"
+                       class="btn px-6 btn-yellow w-fit"><?php _e('Contact us', 'enkidu-v2'); ?></a>
                 </div>
+            </div>
 
-                <div class="p-4 mt-4 sm:mt-0 md:w-full lg:w-1/3 flex-col circled">
-                    <div class="flex rounded-lg h-full p-4 pt-2 xl:p-8 xl:pt-8 flex-col justify-center">
-                        <div class="flex flex-col items-center mb-3 h-64 justify-between mt-6 h-full">
-                            <h3 class="text-white md:text-xl lg:text-4xl"><?php _e('You Can Carrier', 'enkidu-v2'); ?></h3>
-                            <p class="text-white w-54 md:w-72 md:text-md lg:text-md mt-6 mb-4 leading-5">
-                                <?php the_field('connected3'); ?>
-                            </p>
-                            <a href="<?php the_field('go_here_carriers_link'); ?>"
-                               class="btn px btn-yellow text-lg font-bold"><?php _e('Carriers', 'enkidu-v2'); ?></a>
-                        </div>
-                    </div>
+            <div class="xl:w-1/3 md:w-1/2 px-7 mb-4">
+                <div class="flex flex-col justify-evenly items-center text-center h-80 lg:h-96 rounded-full"
+                     style="background-image: linear-gradient(rgba(0, 91, 187, 0.7),rgba(0, 91, 187, 0.7)),url('<?php bloginfo('template_url'); ?>/assets/img/connected/carriers.jpg'); background-size: cover; background-repeat: no-repeat">
+                    <h2 class="md:text-xl lg:text-4xl text-white font-bold title-font mb-2"><?php _e('Carriers', 'enkidu-v2'); ?></h2>
+                    <p class="text-white md:text-md lg:text-lg px-16 leading-5">
+                        Do you have capabilities to deliever medicine to Ukraine or Poland? We encourage you to contact us and join our list of logistic providers
+                    </p>
+                    <a href="<?php the_field('go_here_need_link'); ?>"
+                       class="btn px-6 btn-yellow w-fit"><?php _e('Contact us', 'enkidu-v2'); ?></a>
                 </div>
-
-
             </div>
         </div>
+
     </div>
 </section>
