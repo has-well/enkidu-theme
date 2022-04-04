@@ -47,11 +47,11 @@
                             if ($menu) {
                                 foreach ($menu as $item) :
                                     $url = esc_url($item->url);
-                                    echo '<a class="w-full text-sm px-6 py-2 mr-0 font-bold text-blue-dark md:px-0 lg:pl-2 md:mr-4 lg:mr-5 md:w-auto" href="' . $url . '">' . $item->title . '</a>';
+                                    echo '<a class="btn btn-blue w-full text-sm font-bold text-blue-dark md:px-0 lg:px-3 md:mr-4 lg:mr-4 md:w-auto" href="' . $url . '">' . $item->title . '</a>';
                                 endforeach;
                             }
                             ?>
-                            <a href="<?php the_field('register_link'); ?>" class="btn btn-blue text-sm"><?php _e( 'Register', 'enkidu-v2' ); ?></a>
+<!--                            <a href="--><?php //the_field('register_link'); ?><!--" class="btn btn-blue text-sm">--><?php //_e( 'Register', 'enkidu-v2' ); ?><!--</a>-->
                             <?php pll_the_languages(array('dropdown'=>1, 'display_names_as'=>'slug'));  ?>
                         </div>
                     </div>
