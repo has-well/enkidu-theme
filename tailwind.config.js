@@ -58,7 +58,7 @@ module.exports = {
                 },
             },
             maxWidth: {
-                'text-head': '550px',
+                'text-head': '655px',
                 'text-head-2': '550px'
             },
             fontFamily: {

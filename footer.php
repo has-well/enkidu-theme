@@ -1,7 +1,7 @@
 <footer class="bg-blue-background text-white pt-12 pb-8 px-4">
-    <div class="mx-auto container overflow-hidden flex flex-col lg:flex-row justify-between">
-        <div class="md:w-full lg:w-10/12 block sm:flex text-sm mt-6 lg:mt-0">
-            <ul class="text-white list-none p-0 font-thin flex flex-col text-left w-full">
+    <div class="container overflow-hidden flex flex-col lg:flex-row justify-between">
+        <div class="md:w-full block sm:flex text-sm mt-6 lg:mt-0">
+            <ul class="text-white list-none p-0 font-thin flex flex-col text-left w-full text-center lg:text-left mb-12 lg:mb-0">
                 <li class="inline-block py-2 px-2 text-white font-extrabold text-lg tracking-wide"><?php _e( 'Solution & Networks', 'enkidu-v2' ); ?></li>
                 <?php
                 $menu = wp_get_nav_menu_items('footer_left', array());
@@ -13,7 +13,7 @@
                 }
                 ?>
             </ul>
-            <ul class="text-white list-none p-0 font-thin flex flex-col text-left w-full">
+            <ul class="text-white list-none p-0 font-thin flex flex-col w-full text-center lg:text-left mb-12 lg:mb-0">
                 <li class="inline-block py-2 px-2 sm:px-3 text-white font-extrabold tracking-wide text-lg "><?php _e( 'Partners', 'enkidu-v2' ); ?></li>
                 <?php
                 $menu = wp_get_nav_menu_items('footer_center', array());
@@ -25,7 +25,7 @@
                 }
                 ?>
             </ul>
-            <ul class="text-white list-none p-0 font-thin flex flex-col text-left w-full">
+            <ul class="text-white list-none p-0 font-thin flex flex-col w-full text-center lg:text-left mb-12 lg:mb-0">
                 <li class="inline-block py-2 px-2 sm:px-3 text-white font-extrabold text-lg tracking-wide"><?php _e( 'Sitemap', 'enkidu-v2' ); ?></li>
                 <?php
                 $menu = wp_get_nav_menu_items('footer_right', array());
@@ -42,9 +42,9 @@
                 }
                 ?>
             </ul>
-            <div class="text-white flex flex-col w-full">
+            <div class="text-white flex flex-col w-full text-center lg:text-left mb-12 lg:mb-0">
                 <div class="inline-block py-2 px-2 sm:px-3 text-white text-lg font-extrabold tracking-wide"><?php _e( 'Follow Us', 'enkidu-v2' ); ?></div>
-                <div class="flex pl-2 justify-start mt-1">
+                <div class="flex pl-2 justify-center lg:justify-start mt-1">
                     <?php
                         if ( function_exists('cn_social_icon') ) echo cn_social_icon( );
                     ?>
