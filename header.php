@@ -1,5 +1,5 @@
 <!DOCTYPE>
-<html lang="en">
+<html lang="<?php language_attributes(); ?>">
 <head>
     <?php
         $enkiduGlobal = $GLOBALS['enkidu_global'];
@@ -7,6 +7,7 @@
         include(__DIR__ . '/inc/utils.php');
         wp_head();
     ?>
+    <meta charset="<?php bloginfo('charset') ?>">
     <title><?php echo $post->post_title ?></title>
     <link rel="icon" href="<?php echo $baseURL ?>/assets/img/enkidu.png" type="image/x-icon"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
@@ -35,37 +36,36 @@
                                             $active = 'text-main_yellow';
                                         }
                                         $url = esc_url($item->url);
-                                        echo '<a class="inline-block text-lg md:text-sm text-center w-full py-2 mx-0 font-bold text-left text-blue-dark md:w-auto md:px-0 md:mx-2 hover:text-main_yellow lg:mx-3 '. $active .'" href="' . $url . '">' . $item->title . '</a>';
+                                        echo '<a class="inline-block text-sm lg:text-lg text-center w-full py-2 mx-0 font-bold text-left text-blue md:w-auto md:px-0 md:mx-2 hover:text-main_yellow transition-colors lg:mx-3 '. $active .'" href="' . $url . '">' . $item->title . '</a>';
                                     endforeach;
                                 }
                             ?>
                         </div>
 
-                        <div class="flex flex-row items-start justify-end w-full pt-4 md:items-center md:w-1/3 md:py-0">
-                            <?php
-                            $menu = wp_get_nav_menu_items('head_right', array());
-                            if ($menu) {
-                                foreach ($menu as $item) :
-                                    $url = esc_url($item->url);
-                                    echo '<a class="btn btn-blue w-full text-sm font-bold text-blue-dark md:px-0 lg:px-3 md:mr-4 lg:mr-4 md:w-auto" href="' . $url . '">' . $item->title . '</a>';
-                                endforeach;
-                            }
-                            ?>
-<!--                            <a href="--><?php //the_field('register_link'); ?><!--" class="btn btn-blue text-sm">--><?php //_e( 'Register', 'enkidu-v2' ); ?><!--</a>-->
+                        <div class="flex flex-col lg:flex-row items-center text-center justify-between w-full pt-4 items-center md:w-1/2 md:py-0">
+                            <?php if ($headRightMenuItems = wp_get_nav_menu_items('head_right')): ?>
+                            <?php foreach ($headRightMenuItems as $menuItem): ?>
+                                <a class="w-full text-sm lg:text-lg font-bold text-blue md:px-0 my-2 lg:px-3 md:w-auto hover:text-main_yellow transition-colors"
+                                   href="<?php echo esc_url($menuItem->url) ?>">
+                                    <?php echo $menuItem->title ?>
+                                </a>
+                            <?php endforeach; ?>
+                            <?php endif; ?>
+
+                            <a href="<?php the_field('login_link'); ?>" class="btn btn-yellow font-bold my-2"><?php _e( 'Log in', 'enkidu-v2' ); ?></a>
                             <?php pll_the_languages(array('dropdown'=>1, 'display_names_as'=>'slug'));  ?>
                         </div>
                     </div>
                 </div>
-                <div class="absolute-r flex flex-col items-center items-end justify-center w-6 h-6 bg-white rounded-full cursor-pointer md:hidden hover:bg-gray-100 burger-menu">
-                    <div class="p-2 space-y-1 bg-blue-dark rounded shadow">
-                        <span class="block w-6 h-0.5 bg-main_yellow animate-pulse"></span>
-                        <span class="block w-6 h-0.5 bg-main_yellow animate-pulse"></span>
-                        <span class="block w-6 h-0.5 bg-main_yellow animate-pulse"></span>
+                <div class="absolute-r flex flex-col items-center items-end justify-center w-8 bg-white rounded-full cursor-pointer md:hidden burger-menu">
+                    <div class="p-2 space-y-1.5">
+                        <span class="block w-8 h-0.5 bg-blue-dark animate-pulse"></span>
+                        <span class="block w-8 h-0.5 bg-blue-dark animate-pulse"></span>
+                        <span class="block w-8 h-0.5 bg-blue-dark animate-pulse"></span>
                     </div>
                 </div>
             </div>
         </nav>
 
-    </div>
     </div>
 </header>

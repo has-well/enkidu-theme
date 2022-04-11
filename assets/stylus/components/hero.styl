@@ -16,12 +16,14 @@
       width 100%
 #hero-section
   height: 454px;
-  background-image: url(assets/img/background.svg);
+  background-image: linear-gradient(rgba(51, 51, 51, 0.3),rgba(51, 51, 51, 0.3)),url(assets/img/background.svg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  @media (max-width 540px)
+    background-position inherit
   .custom
-    padding 25px 10px 25px 0
+    padding-top 65px
     @media (max-width 540px)
       padding 65px 10px 35px 0
 #hero-section-2

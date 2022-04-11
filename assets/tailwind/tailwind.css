@@ -5,8 +5,7 @@
 @tailwind utilities;
 
 .btn {
-    @apply font-extrabold py-2 px-3 rounded;
-    font-size: 0.85rem;
+    @apply py-2 px-3 rounded;
 }
 .btn.px {
     @apply px-6;
@@ -15,12 +14,11 @@
     @apply bg-main_head text-white;
 }
 .btn-yellow {
-    @apply bg-main_yellow text-main_button;
-    padding: 10px 20px;
+    @apply bg-main_yellow text-blue py-4 px-24;
 }
 @media (max-width: 560px) {
     .btn-yellow {
-        padding: 2px 4px;
+        @apply px-24;
     }
 }
 .btn-yellow:hover {

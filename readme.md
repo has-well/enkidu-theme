@@ -13,7 +13,7 @@ You need to run this command every time you make changes to src/style.css.
 `yarn tailwind`
 
 If you need to minify tailwind.
-`yarn tailwind:minify`
+`yarn tailwind --minify`
 
 #### 2. Stylus
 You need to run this command once if you're editing files inside stylus folder.
