@@ -38,7 +38,7 @@
 
         <div class="flex items-center justify-center mt-14">
             <a href="<?php the_field('go_here_need_link'); ?>"
-               class="btn px-6 btn-yellow w-fit"><?php _e('Contact us', 'enkidu-v2'); ?></a>
+               class="btn btn-yellow w-fit"><?php _e('Contact us', 'enkidu-v2'); ?></a>
 
         </div>
 
