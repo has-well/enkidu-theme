@@ -1,5 +1,5 @@
 <!DOCTYPE>
-<html lang="<?php language_attributes(); ?>">
+<html lang="<?php echo pll_current_language(); ?>">
 <head>
     <?php
         $enkiduGlobal = $GLOBALS['enkidu_global'];
@@ -10,7 +10,7 @@
     <meta charset="<?php bloginfo('charset') ?>">
     <title><?php echo $post->post_title ?></title>
     <link rel="icon" href="<?php echo $baseURL ?>/assets/img/enkidu.png" type="image/x-icon"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
 </head>
 <body class="w-full">
 <header class="sticky top-0 py-2 bg-white">
