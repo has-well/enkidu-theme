@@ -1,12 +1,12 @@
 
 module.exports = {
-	// purge: {
-	// 	enabled: true,
-	// 	content: [
-	// 		'./*.php',
-	// 		'./**/*.php'
-	// 	]
-  // },
+	purge: {
+		enabled: true,
+		content: [
+			'./*.php',
+			'./template-parts/**/*.php'
+		]
+  },
   corePlugins: {
     container: false
   },
