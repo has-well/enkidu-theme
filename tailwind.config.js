@@ -1,12 +1,12 @@
 
 module.exports = {
-	// purge: {
-	// 	enabled: true,
-	// 	content: [
-	// 		'./*.php',
-	// 		'./**/*.php'
-	// 	]
-  // },
+	purge: {
+		enabled: true,
+		content: [
+			'./*.php',
+			'./template-parts/**/*.php'
+		]
+  },
   corePlugins: {
     container: false
   },
@@ -18,7 +18,7 @@ module.exports = {
 					marginRight: 'auto',
                     maxWidth: '100%',
                     overflow: 'hidden',
-          '@screen sm': {
+          '@screen sm': { // this is pain ;(
             maxWidth: '640px',
             overflow: 'inherit',
           },

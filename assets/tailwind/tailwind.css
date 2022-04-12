@@ -4,26 +4,30 @@
 
 @tailwind utilities;
 
-.btn {
-    @apply py-2 px-3 rounded;
-}
-.btn.px {
-    @apply px-6;
-}
-.btn-blue {
-    @apply bg-main_head text-white;
-}
-.btn-yellow {
-    @apply bg-main_yellow text-blue py-4 px-24;
-}
-@media (max-width: 560px) {
-    .btn-yellow {
-        @apply px-24;
+@layer components {
+    .btn {
+        @apply py-2 px-3 rounded text-center;
     }
-}
-.btn-yellow:hover {
-    @apply bg-yellow-400 text-black transition-all duration-500;
-}
-.btn-blue:hover {
-    @apply bg-main_yellow transition-all duration-500;
+    .btn.px {
+        @apply px-6;
+    }
+    .btn-blue {
+        @apply bg-main_head text-white;
+    }
+    .btn-yellow {
+        @apply bg-main_yellow text-blue py-4 px-16;
+    }
+
+    @screen md {
+        .btn-yellow {
+            @apply px-24;
+        }
+    }
+
+    .btn-yellow:hover {
+        @apply bg-yellow-400 text-black transition-all duration-500;
+    }
+    .btn-blue:hover {
+        @apply bg-main_yellow transition-all duration-500;
+    }
 }
