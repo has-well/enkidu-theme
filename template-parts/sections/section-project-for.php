@@ -32,10 +32,8 @@
                     <div class="flex items-start flex-col max-w-sm">
                         <h2 class="text-xl lg:text-4xl text-blue-dark title-font font-medium pb-6 font-bold"><?php _e('Donors', 'enkidu-v2'); ?></h2>
                         <ul class="list-disc text-main_text leading-8">
-                            <li>Exchange of electronic transactional documents with suppliers</li>
-                            <li>Build transaction rules</li>
-                            <li>Export invoices to your Accounting system or ERP</li>
-                            <li>Transparant and fast platform for financial donors</li>
+                            <li>Transparent and automated flow</li>
+                            <li>Ability to fund exact procurement orders by Medical Procurement of Ukraine</li>
                         </ul>
                     </div>
                 </div>
